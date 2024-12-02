@@ -30,7 +30,9 @@ Semantic Segmentation에서 사용되는 대표적인 성능 측정 방법
 
 
 ## 리더보드
+- Public Score
 ![image](https://github.com/user-attachments/assets/458b3b61-a1ed-4171-adf0-b51b38bb1cb0)
+- Private Score
 ![image](https://github.com/user-attachments/assets/5fd45d4a-1594-4a2f-bc90-78170688adb9)
 
 
