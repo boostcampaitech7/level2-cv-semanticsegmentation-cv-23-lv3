@@ -45,3 +45,13 @@ Semantic Segmentation에서 사용되는 대표적인 성능 측정 방법
 ## 개발 환경
 
 - GPU : v100
+
+
+## 협업 환경 
+- Notion으로 실험 관리와 정보 공유를 진행함.
+
+![image](https://github.com/user-attachments/assets/a6d68c64-da0e-4958-8cca-34da4cdec579)
+
+- Wandb로 실험 결과를 공유하고 모델의 학습 상황을 시각화함.
+
+![image](https://github.com/user-attachments/assets/6cf37168-f8fe-46ac-9b91-d248162b9580)
