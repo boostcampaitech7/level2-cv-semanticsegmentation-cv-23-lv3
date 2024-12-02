@@ -25,6 +25,7 @@ Bone Segmentation은 인공지능 분야에서 중요한 응용 분야 중 하�
 Test set의 Dice coefficient로 평가
 
 Semantic Segmentation에서 사용되는 대표적인 성능 측정 방법
+![image](https://github.com/user-attachments/assets/4870dd87-34a0-492e-8032-43436783800f)
 
 
 
