@@ -35,7 +35,10 @@ Semantic Segmentation에서 사용되는 대표적인 성능 측정 방법
 
 
 ## Dataset
-
+Train: 800, Label O
+Test: 288, Label X
+이미지 크기: 2048 x 2048
+손가락 / 손등 / 팔로 구성되며 29개의 뼈 종류가 존재 
 
 ## 개발 환경
 
