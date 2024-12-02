@@ -55,3 +55,14 @@ Semantic Segmentation에서 사용되는 대표적인 성능 측정 방법
 - Wandb로 실험 결과를 공유하고 모델의 학습 상황을 시각화함.
 
 ![image](https://github.com/user-attachments/assets/6cf37168-f8fe-46ac-9b91-d248162b9580)
+
+## Models
+|Model|Features|Library|
+|------|---|---|
+|U-Net++|다중 skip connection을 사용해 다양한 스케일에서 특징을 통합, 세분화 성능을 개선함|SMP|
+|DeepLabV3+|Atrous Spatial Pyramid Pooling (ASPP)와 디코더 모듈을 결합해 다중 스케일 맥락 정보와 경계 복원을 강화함|SMP|
+
+## Conclusion
+- 데이터 증강을 통한 성능 향상
+- 이전 프로젝트보다 활발한 협업 툴 활용으로 효율적인 실험을 진행함
+- 시각화를 통한 모델의 장단점을 파악하는 것의 중요성을 알게 됨
