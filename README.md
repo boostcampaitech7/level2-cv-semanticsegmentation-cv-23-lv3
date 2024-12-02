@@ -63,7 +63,7 @@ Semantic Segmentation에서 사용되는 대표적인 성능 측정 방법
 |------|---|---|
 |U-Net++|다중 skip connection을 사용해 다양한 스케일에서 특징을 통합, 세분화 성능을 개선함|SMP|
 |DeepLabV3+|Atrous Spatial Pyramid Pooling (ASPP)와 디코더 모듈을 결합해 다중 스케일 맥락 정보와 경계 복원을 강화함|SMP|
-|UPerNet|다양한 스케일의 특징을 통합하여 강력한 전역 표현을 생성하는 Feature Pyramid Network(FPN) 기반의 세그멘테이션 모델|SMP|
+|UPerNet|다양한 스케일의 특징을 통합하여 강력한 전역 표현을 생성하는 FPN 기반의 세그멘테이션 모델|SMP|
 
 ## 데이터 증강 기법
 
