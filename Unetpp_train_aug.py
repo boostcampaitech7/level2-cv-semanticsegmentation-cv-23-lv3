@@ -57,7 +57,7 @@ if not os.path.isdir(SAVED_DIR):
     os.mkdir(SAVED_DIR)
 
 # 프로젝트 설정 및 초기화
-os.environ['WANDB_API_KEY'] = '8be8c0acf78c7a1ed983458e1561a49244caa98e'
+os.environ['WANDB_API_KEY'] = 'YOURKEY'
 wandb.init(project="Hand Bone Image Segmentation", entity="alsghks1066-inha-university",config={
     "epochs": NUM_EPOCHS,
     "batch_size": BATCH_SIZE,
