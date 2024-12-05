@@ -1,0 +1,44 @@
+image_root: /seg/data/test/DCM
+
+root_path: /seg
+
+CLASSES: [
+    'finger-1', 'finger-2', 'finger-3', 'finger-4', 'finger-5',
+    'finger-6', 'finger-7', 'finger-8', 'finger-9', 'finger-10',
+    'finger-11', 'finger-12', 'finger-13', 'finger-14', 'finger-15',
+    'finger-16', 'finger-17', 'finger-18', 'finger-19', 'Trapezium',
+    'Trapezoid', 'Capitate', 'Hamate', 'Scaphoid', 'Lunate',
+    'Triquetrum', 'Pisiform', 'Radius', 'Ulna',
+]
+
+batch_size: 6
+num_workers: 6
+
+threshold: 0.5
+
+model_paths:
+  1024: 
+    - [/seg/ensemble/paths/1024/efficient_b6_unet++_best_model_1024.pt,"UnetPlusPlus","efficientnet-b6"]
+    - [/seg/ensemble/paths/1024/UPerNet_mit_b4_1024_0.9688.pt,"UPerNet","mit_b4"]
+    - [/seg/ensemble/paths/1024/Unetpp_best_Consine_TMax100_lr1e-3_epoch100_MP_combined_loss_Res_1024_aug_order_augment_add_111.pt,"UnetPlusPlus","efficientnet-b4"]
+  1536:  
+    - [/seg/ensemble/paths/1536/UNet++_Consine_TMax100_lr1e-3_combined_loss_Res_1536_fold0.pt, "UnetPlusPlus", "efficientnet-b4"]
+    - [/seg/ensemble/paths/1536/UNet++_best_Consine_TMax100_lr1e-3_epoch100_MP_combined_loss_Res_1536_aug_order_fold1.pt, "UnetPlusPlus", "efficientnet-b4"]
+    - [/seg/ensemble/paths/1536/UNet++_Consine_TMax100_lr1e-3_combined_loss_Res_1536_fold2.pt, "UnetPlusPlus", "efficientnet-b4"]
+    - [/seg/ensemble/paths/1536/UNet++_best_Consine_TMax100_lr1e-3_epoch100_MP_combined_loss_Res_1536_aug_order_fold3.pt, "UnetPlusPlus", "efficientnet-b4"]
+    - [/seg/ensemble/paths/1536/UNet++_best_Consine_TMax100_lr1e-3_epoch100_MP_combined_loss_Res_1536_aug_order_fold04.pt, "UnetPlusPlus", "efficientnet-b4"]
+    - [/seg/ensemble/paths/1536/DeepLabv3+_Consine_TMax100_lr1e-3_combined_loss_1536_fold0.pt, "DeepLabV3Plus", "efficientnet-b5"]
+    - [/seg/ensemble/paths/1536/DeepLabV3+_best_Consine_TMax100_lr1e-3_epoch100_MP_combined_loss_Res_1536_aug_order_fold1.pt, "DeepLabV3Plus", "efficientnet-b5"]
+    - [/seg/ensemble/paths/1536/DeepLabv3+_Consine_TMax100_lr1e-3_combined_loss_1536_fold2.pt, "DeepLabV3Plus", "efficientnet-b5"]
+    - [/seg/ensemble/paths/1536/DeepLabv3+_Consine_TMax100_lr1e-3_combined_loss_1536_fold3.pt, "DeepLabV3Plus", "efficientnet-b5"]
+    - [/seg/ensemble/paths/1536/DeepLabv3+_b5_Consine_TMax100_lr1e-3_combined_loss_1536_fold04_.pt, "DeepLabV3Plus", "efficientnet-b5"]
+    - [/seg/ensemble/paths/1536/Unetpp_best_Consine_TMax100_lr1e-3_epoch100_MP_combined_loss_Res_1536_aug_order_augment_add.pt, "UnetPlusPlus", "efficientnet-b4"]
+    - [/seg/ensemble/paths/1536/Unetpp_best_Consine_TMax100_lr1e-3_epoch100_MP_combined_loss_Res_1536_aug_order_augment_add_3.pt, "UnetPlusPlus", "efficientnet-b4"]
+  2048: 
+    - [/seg/ensemble/paths/2048/2048.pt, "UnetPlusPlus", "efficientnet-b6"]
+    - [/seg/ensemble/paths/2048/upp-eff0.pt, "UnetPlusPlus", "efficientnet-b0"]
+    
+
+
+save_dir: /seg/ensemble/results
+output_name: ensemble3.csv
